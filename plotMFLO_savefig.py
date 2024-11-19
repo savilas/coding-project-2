@@ -49,15 +49,15 @@ xlocs = [i for i in range(len(problem_sizes))]
 
 plt.xticks(xlocs, problem_sizes)
 
-plt.plot(code1_time, "r-o", label=var_names[1])
-plt.plot(code2_time, "b-x", label=var_names[2])
-plt.plot(code3_time, "g-^", label=var_names[3])
+plt.plot(code1_mflops, "r-o", label=var_names[1])
+plt.plot(code2_mflops, "b-x", label=var_names[2])
+plt.plot(code3_mflops, "g-^", label=var_names[3])
 
 #plt.xscale("log")
 #plt.yscale("log")
 
 plt.xlabel("Problem Sizes")
-plt.ylabel("runtime")
+plt.ylabel("Mflops")
 
 varNames = [var_names[1], var_names[2], var_names[3]]
 plt.legend(varNames, loc="best")
